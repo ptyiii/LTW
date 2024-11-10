@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e2a38;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #0e1621;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu a {
+    margin: 0 10px;
+    color: #b0b3b8;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.download-btn {
+    background-color: #0070e0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.champions-section {
+    padding: 20px;
+}
+
+.champions-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.champion-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.champion {
+    text-align: center;
+}
+
+.champion img {
+    width: 60px; /* Đặt kích thước cố định nếu cần */
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover; /* Đảm bảo ảnh giữ tỷ lệ khi hiển thị */
+}
+
+.champion p {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
