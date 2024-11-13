@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Menu Example</title>
+</head>
+<body>
+
+    <header>
+        <div class="Header">
+            <a id="container" href="index.html">
+                <img src="../TFT Icon/dtcl-mua-4-hd12-removebg.png" alt="nguoi dep">
+                <div id="meta">EmPhongTFT</div>
+            </a>
+        </div>
+    </header>
+
+    <div>  
+        <nav>
+            <ul class="menu">
+                <li><a href="comps.html">Đội hình</a></li>
+                <li><a href="#">Tip & Tricks</a></li>
+                <li><a href="listchamp.html">Tướng</a></li>
+                <li><a href="#">Cập nhật</a></li>
+                <li><a href="#">Công Cụ</a></li>
+                <li><a href="#">Xây dựng đội hình</a></li>
+                <li><a href="#">Tin Tức</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-container">
+
+        <div class="row">  
+            <div class="costsidebar">
+                <ul class="sidebar">
+                    <li class="filter-item" name="1"><img class="gold-icon" src="../TFT Icon/Coins_Icon.png" alt="cost">"1</li>
+                    <li class="filter-item" name="1"><img class="gold-icon" src="../TFT Icon/Coins_Icon.png" alt="cost">"2</li>
+                    <li class="filter-item" name="1"><img class="gold-icon" src="../TFT Icon/Coins_Icon.png" alt="cost">"3</li>
+                    <li class="filter-item" name="1"><img class="gold-icon" src="../TFT Icon/Coins_Icon.png" alt="cost">"4</li>
+                    <li class="filter-item" name="1"><img class="gold-icon" src="../TFT Icon/Coins_Icon.png" alt="cost">"5</li>
+                </ul>
+            </div>
+            
+            <div class="main">
+                <div class="page-header">
+                    <p>TFT List Champion</p>
+                </div>
+        
+                <div class="DropDown">
+                    <label for="traitDropdown">Traits</label>
+                    <select name="Traits" id="traitsDropdown" onchange="filterChampions">
+                    <option value="All">All</option>
+                    <option value="Arcana">Arcana</option>
+                    <option value="Chrono">Chrono</option>
+                    <option value="Dragon">Dragon</option>
+                    <option value="Druid">Druid</option>
+                    <option value="Eldritch">Eldritch</option>
+                    <option value="Faerie">Faerie</option>
+                    </select>
+                </div>
+                <div class="champion_list">
+                    <div class="champion-list" id="championList">
+                        <div class="champion-item" data-trait="Arcana">
+                            <img src="../TFT Icon/champion_1.png" alt="Ashe">
+                            <p>Ashe</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_2.png" alt="Blitcrank">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_3.png" alt="ELise">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_4.png" alt="Jax">
+                            <p>Shyvana</p>
+                          </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_5.png" alt="Jayce">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_6.png" alt="Poppy">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_8.png" alt="Twitch">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_9.png" alt="Wawick">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_10.png" alt="Zigg">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_11.png" alt="Zoe">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_12.png" alt="Ahri">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_13.png" alt="Seraphine">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_15.png" alt="Akali">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_16.png" alt="Cassiopeia">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_17.png" alt="Galio">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_18.png" alt="Nilah">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_19.png" alt="Kassadin">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_20.png" alt="Rumble">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_21.png" alt="Nunu">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_23.png" alt="Shyvana">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_24.png" alt="Syndra">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_25.png" alt="Tristana">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_26.png" alt="Zilean">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_27.png" alt="Bard">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_28.png" alt="Ezreal">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_29.png" alt="Hecarim">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_30.png" alt="Jinx">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_31.png" alt="Katarina">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_32.png" alt="Hwei">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_33.png" alt="Morderkaiser">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_34.png" alt="Veigar">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_35.png" alt="Shen">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_36.png" alt="Swain">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/Diana.png" alt="Shyvana">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_38.png" alt="Neeko">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_39.png" alt="Vex">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_40.png" alt="Fiora">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_41.png" alt="Gwen">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_42.png" alt="Kalista">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_43.png" alt="Karma">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_44.png" alt="Ryze">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_45.png" alt="Nami">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_46.png" alt="Nasus">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/Briar.png" alt="Briar">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_48.png" alt="Rakan">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_49.png" alt="Varus">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_50.png" alt="Taric">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_53.png" alt="Morgana">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/champion_57.png" alt="Xerah">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/Camille.png" alt="Camile">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/KogMaw.png" alt="Kog'Maw">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/Lillia.png" alt="Lillia">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/Milio.png" alt="Milio">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/MonkeyKing.png" alt="Wukong">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/Olaf.png" alt="Olaf">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/Smolder.png" alt="Smolder">
+                            <p>Shyvana</p>
+                        </div>
+                        <div class="champion-item" data-trait="Dragon">
+                            <img src="../TFT Icon/TahmKench.png" alt="Tahm Kench">
+                            <p>Shyvana</p>
+                        </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        </div>
+        
+    <script>
+        function filterChampions() {
+          const selectedTrait = document.getElementById("traitDropdown").value;
+          const champions = document.querySelectorAll(".champion-item");
+    
+          champions.forEach(champion => {
+            const championTrait = champion.getAttribute("data-trait");
+            if (selectedTrait === "All" || championTrait === selectedTrait) {
+              champion.classList.remove("hidden");
+            } else {
+              champion.classList.add("hidden");
+            }
+          });
+        }
+      </script>
+</body>
+</html>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #0E1E2A;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.main-container > div {
+    flex: 1;
+}
+
+.main-container, Header { 
+    width: 100%;
+    max-width: 1000px; /* Đặt chiều rộng tối đa cho container */ 
+    margin: 0 auto; /* Căn giữa container */ 
+    padding: 20px; /* Thêm khoảng cách bên trong container */ 
+    background-color: #0E1E2A; /* Đặt màu nền cho container */ 
+    position: relative;
+}
+
+nav {
+    background-color: #0E1E2A; /* Darker menu background */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+Header {
+    background-color: #0E1E2A;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {  
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin: 0 auto;
+    background-color: #3498DB; /* Menu background */
+}
+
+.menu li {
+    margin: 10px 20px;
+}
+
+.menu a {
+    color: #FFFFFF; /* Menu item color */
+    text-decoration: none;
+    font-size: 23px;
+    padding: 3px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #2ECC71; /* Color change on hover */
+}
+
+.Header { 
+    display: flex; 
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: sofia-pro, sans-serif; 
+    font-size: 42px; 
+    font-weight: 750; 
+    column-gap: 10px; 
+    text-decoration: none; 
+    color: #f5f6fa; 
+    margin-left: 250px;
+}
+
+.Header img {
+    width: 50px;
+    height: auto;
+    image-rendering: auto;
+    background-color: #0E1E2A;
+}
+
+#meta {
+    font-size: 43px;
+    font-weight: 750;
+    color: #f5f6fa;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.page-header {
+    color: #f5f6fa;
+    position: absolute;
+    left: 27%;
+    font-size: 32px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.champion-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    padding: 0px;
+    float: left;
+}
+
+.champion-item {
+    width: 100%;
+    padding: 10px;
+}
+
+.champion-item img {
+    width: 70px;
+    height: 70px;
+}
+
+.champion-item p {
+    color: #0c8f37;
+}
+
+.champion_list {
+    display: flex;
+    justify-content: left;
+}
+
+.DropDown {
+    margin-top: 70px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-item {
+    position: relative;
+    color: #3498DB;
+    font-weight: 300;
+    padding: 15px;
+    transition: all;
+    cursor: pointer;
+    border-bottom:#0E1E2A;
+    display: block;
+}
+
+ul li {
+    list-style: none;
+}
+
+.main {
+    padding: 0 0 0 15px;
+    border-left: 1px solid #17313a;
+    flex: 50%;
+}
+
+.costsidebar {
+    flex: 50%;
+}
+
+.gold-icon {
+    width: 15px !important;
+    height: auto !important;
+    border: none !important;
+    margin-right: 10px;
+    opacity: .54;
+    transition: opacity .3s;
+}
+
+
+</style>

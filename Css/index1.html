@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Menu Example</title>
+</head>
+<body>
+    <header>
+        <div class="Header">
+            <a id="container" href="index.html">
+                <img src="../TFT Icon/dtcl-mua-4-hd12-removebg.png" alt="nguoi dep">
+                <div id="meta">EmPhongTFT</div>
+            </a>
+        </div>
+    </header>
+    <div>  
+        <nav>
+            <ul class="menu">
+                <li><a href="comps.html">Đội hình</a></li>
+                <li><a href="#">Tip & Tricks</a></li>
+                <li><a href="#">Tướng</a></li>
+                <li><a href="#">Cập nhật</a></li>
+                <li><a href="#">Công Cụ</a></li>
+                <li><a href="#">Xây dựng đội hình</a></li>
+                <li><a href="#">Tin Tức</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-container">
+        <div class="text" width="1110" height="550">
+            <img src="../TFT Icon/banner1.jpg" alt="">
+        </div>
+    
+        <section>
+            <div class="container">
+                <div class="section">
+                    <img src="../TFT Icon//cheer_pengu.jpg" alt="pengu">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="section">
+                    <img src="../TFT Icon/happy_pengu.jpg" alt="pengu">
+                    <h3>Accurate and Unbiased</h3>
+                    <p>We use machine learning to discover the top TFT comps, analysing over 2 million games a day to give the most accurate statistics.</p>
+                </div>
+                <div class="section">
+                    <img src="../TFT Icon/dab_pengu.jpg" alt="pengu">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #0E1E2A;
+}
+
+.main-container, Header { 
+    width: 100%;
+    max-width: 1200px; /* Đặt chiều rộng tối đa cho container */ 
+    margin: 0 auto; /* Căn giữa container */ 
+    padding: 20px; /* Thêm khoảng cách bên trong container */ 
+    background-color: #0E1E2A; /* Đặt màu nền cho container */ 
+}
+
+nav {
+    background-color: #0E1E2A; /* Darker menu background */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+Header {
+    background-color: #0E1E2A;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {  
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin: 0 auto;
+    background-color: #3498DB; /* Menu background */
+}
+
+.menu li {
+    margin: 10px 20px;
+}
+
+.menu a {
+    color: #FFFFFF; /* Menu item color */
+    text-decoration: none;
+    font-size: 23px;
+    padding: 3px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #2ECC71; /* Color change on hover */
+}
+
+.Header { 
+    display: flex; 
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: sofia-pro, sans-serif; 
+    font-size: 42px; 
+    font-weight: 750; 
+    column-gap: 10px; 
+    text-decoration: none; 
+    color: #f5f6fa; 
+    margin-left: 250px;
+}
+
+.Header img {
+    width: 50px;
+    height: auto;
+    image-rendering: auto;
+    background-color: #0E1E2A;
+}
+
+#meta {
+    font-size: 43px;
+    font-weight: 750;
+    color: #f5f6fa;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+section {
+    font-family: 'Arial', sans-serif;
+    background-color: #0E1E2A;
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 300px;
+}
+
+.section img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    image-rendering: auto;
+}
+
+.section h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 16px;
+    color: #555;
+}
+
+.text {
+    width: 100%; 
+    max-width: 1000px; 
+    margin: 20px auto; /* Tạo khoảng cách trên dưới và căn giữa */
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+.text img {
+    width: 100%;
+    height: auto;
+}
+
+</style>
