@@ -64,9 +64,10 @@
         
                 <div class="dropdown">
                     <button class="dropdown-toggle btn btn-secondary" aria-haspopup="true" aria-expanded="false">
-                        <div class="filter-dropdown-wrapper">Traits</div>
+                        <div class="filter-dropdown-wrapper" id="selectedTrait">Traits</div>
                     </button>
                     <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-trait="all">All</a>
                         <a href="#" class="dropdown-item" data-trait="Arcana">Arcana</a>
                         <a href="#" class="dropdown-item" data-trait="Chrono">Chrono</a>
                         <a href="#" class="dropdown-item" data-trait="Dragon">Dragon</a>
@@ -642,6 +643,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropdownMenu = document.querySelector('.dropdown-menu');
     const dropdownItems = document.querySelectorAll('.dropdown-item');
     const champions = document.querySelectorAll('.champion-item');
+    const selectedTraitDisplay = document.getElementById('selectedTrait');
 
     // Hiển thị tất cả các ảnh ban đầu
     champions.forEach(champion => {
@@ -659,11 +661,14 @@ document.addEventListener('DOMContentLoaded', function() {
         item.addEventListener('click', function(event) {
             event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
             const selectedTrait = this.getAttribute('data-trait');
+            const selectedText = this.textContent;
             champions.forEach(champion => {
                 if (selectedTrait === 'all') {
                     champion.style.display = 'block';
+                    selectedTraitDisplay.textContent = 'Traits'; // Hiển thị "Traits" thay vì "All"
                 } else if (champion.getAttribute('data-trait') === selectedTrait) {
                     champion.style.display = 'block';
+                    selectedTraitDisplay.textContent = selectedText; // Cập nhật nội dung của nút dropdown
                 } else {
                     champion.style.display = 'none';
                 }
