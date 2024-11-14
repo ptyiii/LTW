@@ -67,12 +67,30 @@
                         <div class="filter-dropdown-wrapper">Traits</div>
                     </button>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item" data-cost="all">All</a>
-                        <a href="#" class="dropdown-item" data-cost="1">Cost 1</a>
-                        <a href="#" class="dropdown-item" data-cost="2">Cost 2</a>
-                        <a href="#" class="dropdown-item" data-cost="3">Cost 3</a>
-                        <a href="#" class="dropdown-item" data-cost="4">Cost 4</a>
-                        <a href="#" class="dropdown-item" data-cost="5">Cost 5</a>
+                        <a href="#" class="dropdown-item" data-trait="Arcana">Arcana</a>
+                        <a href="#" class="dropdown-item" data-trait="Chrono">Chrono</a>
+                        <a href="#" class="dropdown-item" data-trait="Dragon">Dragon</a>
+                        <a href="#" class="dropdown-item" data-trait="Druid">Druid</a>
+                        <a href="#" class="dropdown-item" data-trait="Eldritch">Eldritch</a>
+                        <a href="#" class="dropdown-item" data-trait="Faerie">Faerie</a>
+                        <a href="#" class="dropdown-item" data-trait="Honeymancy">Honeymancy</a>
+                        <a href="#" class="dropdown-item" data-trait="Portal">Portal</a>
+                        <a href="#" class="dropdown-item" data-trait="Pyro">Pyro</a>
+                        <a href="#" class="dropdown-item" data-trait="Ravenous">Ravenous</a>
+                        <a href="#" class="dropdown-item" data-trait="Sugarcraft">Sugarcraft</a>
+                        <a href="#" class="dropdown-item" data-trait="Witchcraft">Witchcraft</a>
+                        <a href="#" class="dropdown-item" data-trait="Ascendent">Ascendent</a>
+                        <a href="#" class="dropdown-item" data-trait="Bastion">Bastion</a>
+                        <a href="#" class="dropdown-item" data-trait="Bat Queen">Bat Queen</a>
+                        <a href="#" class="dropdown-item" data-trait="Best Friends">Best Friends</a>
+                        <a href="#" class="dropdown-item" data-trait="Blaster">Blaster</a>
+                        <a href="#" class="dropdown-item" data-trait="Multistriker">Multistriker</a>
+                        <a href="#" class="dropdown-item" data-trait="Preserver">Preserver</a>
+                        <a href="#" class="dropdown-item" data-trait="Scholar">Scholar</a>
+                        <a href="#" class="dropdown-item" data-trait="Shapeshifter">Shapeshifter</a>
+                        <a href="#" class="dropdown-item" data-trait="Vanguard">Vanguard</a>
+                        <a href="#" class="dropdown-item" data-trait="Warrior">Warrior</a>
+                        <a href="#" class="dropdown-item" data-trait="Incantor">Incantor</a>
                     </div>
                 </div>
                 
@@ -585,16 +603,18 @@ span {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #17313a;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 4px;
     margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
 }
 
 .dropdown-item {
-    color: black;
+    color: #99b1b8;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -617,18 +637,19 @@ span {
 </style>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const dropdownToggle = document.querySelector('.dropdown-toggle');
     const dropdownMenu = document.querySelector('.dropdown-menu');
     const dropdownItems = document.querySelectorAll('.dropdown-item');
-    const champions = document.querySelectorAll('.champion');
+    const champions = document.querySelectorAll('.champion-item');
 
     // Hiển thị tất cả các ảnh ban đầu
     champions.forEach(champion => {
         champion.style.display = 'block';
     });
 
-    dropdownToggle.addEventListener('click', function() {
+    dropdownToggle.addEventListener('click', function(event) {
+        event.stopPropagation(); // Ngăn chặn sự kiện click lan ra ngoài
         const isExpanded = dropdownToggle.getAttribute('aria-expanded') === 'true';
         dropdownToggle.setAttribute('aria-expanded', !isExpanded);
         dropdownMenu.style.display = !isExpanded ? 'block' : 'none';
@@ -637,11 +658,11 @@ span {
     dropdownItems.forEach(item => {
         item.addEventListener('click', function(event) {
             event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
-            const selectedCost = this.getAttribute('data-cost');
+            const selectedTrait = this.getAttribute('data-trait');
             champions.forEach(champion => {
-                if (selectedCost === 'all') {
+                if (selectedTrait === 'all') {
                     champion.style.display = 'block';
-                } else if (champion.getAttribute('data-cost') === selectedCost) {
+                } else if (champion.getAttribute('data-trait') === selectedTrait) {
                     champion.style.display = 'block';
                 } else {
                     champion.style.display = 'none';
@@ -652,47 +673,15 @@ span {
         });
     });
 
-    // Đóng dropdown khi nhấp ra ngoài
-    window.addEventListener('click', function(event) {
-        if (!dropdownToggle.contains(event.target)) {
-            dropdownToggle.setAttribute('aria-expanded', 'false');
-            dropdownMenu.style.display = 'none';
-        }
+    // Đóng dropdown menu khi nhấp ra ngoài
+    document.addEventListener('click', function() {
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+        dropdownMenu.style.display = 'none';
     });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.filter-button');
-    const champions = document.querySelectorAll('.champion-item');
-    let activeButton = null;
-
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            if (activeButton === this) {
-                // Nếu nút đã được chọn, hủy chọn và hiển thị lại tất cả các champion
-                activeButton.classList.remove('active');
-                activeButton = null;
-                champions.forEach(champion => {
-                    champion.style.display = 'block';
-                });
-            } else {
-                // Nếu nút chưa được chọn, chọn nút và lọc champion
-                if (activeButton) {
-                    activeButton.classList.remove('active');
-                }
-                this.classList.add('active');
-                activeButton = this;
-
-                const cost = this.getAttribute('data-cost');
-                champions.forEach(champion => {
-                    if (champion.getAttribute('data-cost') === cost) {
-                        champion.style.display = 'block';
-                    } else {
-                        champion.style.display = 'none';
-                    }
-                });
-            }
-        });
+    // Ngăn chặn sự kiện click lan ra ngoài dropdown menu
+    dropdownMenu.addEventListener('click', function(event) {
+        event.stopPropagation();
     });
 });
 
@@ -714,5 +703,5 @@ document.addEventListener("DOMContentLoaded", function() {
             p.textContent = img.alt;
         }
     });
-});     
+});   
 </script>
