@@ -89,3 +89,129 @@ a#container img {
     font-size: 29px; /* Điều chỉnh kích thước chữ */
     font-weight: bold; /* Đặt chữ đậm */
 }
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b2333;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2c3648;
+    border-radius: 8px;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #f1c40f;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.meta-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Team Compositions */
+.comp-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comp {
+    background-color: #3b4b66;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rank {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.champions {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.champion {
+    position: relative;
+    display: inline-block;
+}
+
+.champion img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.traits-items {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #f1c40f;
+}
+
+.trait {
+    background-color: #2980b9;
+    padding: 2px 4px;
+    border-radius: 3px;
+    margin-bottom: 2px;
+}
+
+.item {
+    background-color: #e67e22;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
