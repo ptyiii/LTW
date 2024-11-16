@@ -36,25 +36,56 @@ nav {
 .menu a:hover {
     color: #2ECC71; /* Color change on hover */
 }
- 
-img {
-    width: 5%;
-    height: auto;
-    object-position: 0px 5%;
-    image-rendering: pixelated;
-    margin-bottom: 10px;
-    vertical-align: middle
-  }
+
+.header {
+    background-color: #333333; /* Darker header background */
+    padding: 10px;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+}
+
+.header a {
+    display: flex;
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    color: #FFFFFF; /* Đặt màu chữ */
+}
+
+.header img {
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+a#container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 5px;
+    padding-top: 5px;
+    gap: 10px;
+}
+
+a#container img {
+    max-width: 50px; /* Điều chỉnh kích thước hình ảnh */
+    margin-bottom: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
 
 #container {
     display: flex;
     align-items: center;
-    margin-left: 200px;
-    margin-top: 5px;
-    font-family: sofia-pro, sans-serif;
-    font-size: 42px;
-    font-weight: 750;
-    column-gap: 10px;   
     text-decoration: none;
     color: #f5f6fa;
+    background-color: #0E1E2A;
+}
+
+#container img {
+    max-width: 100px; /* Điều chỉnh kích thước hình ảnh */
+    margin-bottom: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+#meta {
+    font-size: 29px; /* Điều chỉnh kích thước chữ */
+    font-weight: bold; /* Đặt chữ đậm */
 }

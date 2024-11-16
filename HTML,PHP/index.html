@@ -9,8 +9,8 @@
 <body>
     <header>
         <div class="Header">
-            <a id="container" href="index.html">
-                <img src="../TFT Icon/dtcl-mua-4-hd12-removebg.png" alt="nguoi dep">
+            <a id="container" style="height: 40;" href="index.html">
+                <img src="../TFT Icon/dtcl-mua-4-hd12-removebg.png" alt="">
                 <div id="meta">EmPhongTFT</div>
             </a>
         </div>
@@ -21,7 +21,7 @@
                 <li><a href="comps.html">Đội hình</a></li>
                 <li><a href="#">Tip & Tricks</a></li>
                 <li><a href="listchamp.html">Tướng</a></li>
-                <li><a href="#">Công Cụ</a></li>
+                <li><a href="tierlist.html">Xếp hạng tướng</a></li>
                 <li><a href="#">Xây dựng đội hình</a></li>
                 <li><a href="#">Tin Tức</a></li>
             </ul>
@@ -29,25 +29,25 @@
     </div>
     <div class="main-container">
         <div class="text" width="1110" height="550">
-            <img src="../TFT Icon/banner1.jpg" alt="">
+            <img src="../TFT Icon/TeamfightTactics_Set12_MagicandMayhem_KeyVisual.jpg" alt="">
         </div>
     
         <section>
             <div class="container">
                 <div class="section">
                     <img src="../TFT Icon//cheer_pengu.jpg" alt="pengu">
-                    <h3></h3>
-                    <p></p>
+                    <h3>Chính xác và Không thiên vị</h3>
+                    <p>Chúng tôi sử dụng học máy để tìm ra những đội hình TFT hàng đầu, phân tích hơn 2 triệu trận đấu mỗi ngày để mang đến những số liệu thống kê chính xác nhất.</p>
                 </div>
                 <div class="section">
                     <img src="../TFT Icon/happy_pengu.jpg" alt="pengu">
-                    <h3>Accurate and Unbiased</h3>
-                    <p>We use machine learning to discover the top TFT comps, analysing over 2 million games a day to give the most accurate statistics.</p>
+                    <h3>Cập nhật liên tục</h3>
+                    <p>Dữ liệu được làm mới sau vài phút và cập nhật theo mọi bản vá nhỏ, vì vậy chúng tôi luôn nắm bắt các xu hướng meta mới nhất.</p>
                 </div>
                 <div class="section">
                     <img src="../TFT Icon/dab_pengu.jpg" alt="pengu">
-                    <h3></h3>
-                    <p></p>
+                    <h3>Nắm bắt lợi thế</h3>
+                    <p>Hãy tham gia cùng hàng ngàn người chơi sử dụng MetaTFT để thích nghi với meta, học chiến lược mới, và leo hạng trong TFT xếp hạng.</p>
                 </div>
             </div>
         </section>
@@ -57,51 +57,67 @@
 
 <style>
     * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+body {
     font-family: 'Arial', sans-serif;
-    background-color: #0E1E2A;
+    background-color: #0E1E2A; /* Dark background similar to your image */
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
+    padding: 0; /* Loại bỏ khoảng cách mặc định */
 }
 
-.main-container, Header { 
-    width: 100%;
-    max-width: 1200px; /* Đặt chiều rộng tối đa cho container */ 
-    margin: 0 auto; /* Căn giữa container */ 
-    padding: 20px; /* Thêm khoảng cách bên trong container */ 
-    background-color: #0E1E2A; /* Đặt màu nền cho container */ 
+header {
+    width: 100%; /* Đặt chiều rộng 100% cho header */
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 20px; /* Thêm khoảng cách bên trong */
+    background-color: #3498DB; /* Đặt màu nền cho header */
+    border-radius: 10px; /* Bo tròn các góc */
+    width: 100%; /* Đặt chiều rộng 100% */
+    height: auto; /* Đặt chiều cao tự động */
+}
+
+.header a {
+    display: flex;
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    color: #FFFFFF; /* Đặt màu chữ */
+    width: 100%; /* Đặt chiều rộng 100% */
+}
+
+.header img {
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f5f6fa;
+    background-color: #0E1E2A;
+    width: 100%; /* Đặt chiều rộng 100% */
+}
+
+#container img {
+    max-width: 100px; /* Điều chỉnh kích thước hình ảnh */
+    margin-bottom: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
 }
 
 nav {
     background-color: #0E1E2A; /* Darker menu background */
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-Header {
-    background-color: #0E1E2A;
-    margin: 0;
-    padding: 0;
 }
 
 .menu {  
     list-style: none;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    padding: 12px 12px;
     margin: 0 auto;
     background-color: #3498DB; /* Menu background */
 }
@@ -113,46 +129,13 @@ Header {
 .menu a {
     color: #FFFFFF; /* Menu item color */
     text-decoration: none;
-    font-size: 23px;
+    font-size: 16px;
     padding: 3px;
     transition: color 0.3s;
 }
 
 .menu a:hover {
     color: #2ECC71; /* Color change on hover */
-}
-
-.Header { 
-    display: flex; 
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    font-family: sofia-pro, sans-serif; 
-    font-size: 42px; 
-    font-weight: 750; 
-    column-gap: 10px; 
-    text-decoration: none; 
-    color: #f5f6fa; 
-    margin-left: 250px;
-}
-
-.Header img {
-    width: 50px;
-    height: auto;
-    image-rendering: auto;
-    background-color: #0E1E2A;
-}
-
-#meta {
-    font-size: 43px;
-    font-weight: 750;
-    color: #f5f6fa;
-}
-
-#container {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
 }
 
 section {
@@ -173,13 +156,13 @@ section {
 }
 
 .section {
-    background-color: #fff;
+    background-color: #17313a;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     width: 300px;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
 }
 
 .section img {
@@ -211,6 +194,93 @@ section {
 .text img {
     width: 100%;
     height: auto;
+    image-rendering: auto;
 }
 
+.section h3 {
+    font-size: 20px;
+    color: #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 16px;
+    color: #e6e6e6;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 80%;
+    }
+
+    .section h3 {
+        font-size: 18px;
+    }
+
+    .section p {
+        font-size: 14px;
+    }
+
+    .header {
+        padding: 15px;
+    }
+}
+
+/* Điểm dừng cho màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .section h3 {
+        font-size: 16px;
+    }
+
+    .section p {
+        font-size: 12px;
+    }
+
+    .text {
+        padding-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .header {
+        padding: 10px;
+    }
+}
+
+/* Điểm dừng cho màn hình nhỏ hơn 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .section h3 {
+        font-size: 14px;
+    }
+
+    .section p {
+        font-size: 12px;
+    }
+
+    .text {
+        padding-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        padding: 5px;
+    }
+}
 </style>
