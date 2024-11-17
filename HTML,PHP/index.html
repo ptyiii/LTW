@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../Css/index.cs">
     <title>Menu Example</title>
 </head>
 <body>
@@ -56,60 +56,17 @@
 </html>
 
 <style>
-    * {
+* {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Arial', sans-serif;
     background-color: #0E1E2A; /* Dark background similar to your image */
-    margin: 0; /* Loại bỏ khoảng cách mặc định */
-    padding: 0; /* Loại bỏ khoảng cách mặc định */
-}
-
-header {
-    width: 100%; /* Đặt chiều rộng 100% cho header */
-}
-
-.header {
-    display: flex;
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    padding: 20px; /* Thêm khoảng cách bên trong */
-    background-color: #3498DB; /* Đặt màu nền cho header */
-    border-radius: 10px; /* Bo tròn các góc */
-    width: 100%; /* Đặt chiều rộng 100% */
-    height: auto; /* Đặt chiều cao tự động */
-}
-
-.header a {
-    display: flex;
-    align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
-    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
-    color: #FFFFFF; /* Đặt màu chữ */
-    width: 100%; /* Đặt chiều rộng 100% */
-}
-
-.header img {
-    margin-right: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
-}
-
-#container {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #f5f6fa;
-    background-color: #0E1E2A;
-    width: 100%; /* Đặt chiều rộng 100% */
-}
-
-#container img {
-    max-width: 100px; /* Điều chỉnh kích thước hình ảnh */
-    margin-bottom: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
 }
 
 nav {
-    background-color: #0E1E2A; /* Darker menu background */
+    background-color: #333333; /* Darker menu background */
 }
 
 .menu {  
@@ -136,6 +93,100 @@ nav {
 
 .menu a:hover {
     color: #2ECC71; /* Color change on hover */
+}
+
+.header {
+    background-color: #333333; /* Darker header background */
+    padding: 10px;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+}
+
+.header a {
+    display: flex;
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    color: #FFFFFF; /* Đặt màu chữ */
+}
+
+.header img {
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+a#container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 5px;
+    padding-top: 5px;
+    gap: 10px;
+}
+
+a#container img {
+    max-width: 50px; /* Điều chỉnh kích thước hình ảnh */
+    margin-bottom: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f5f6fa;
+    background-color: #0E1E2A;
+}
+
+#container img {
+    max-width: 100px; /* Điều chỉnh kích thước hình ảnh */
+    margin-bottom: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+#meta {
+    font-size: 29px; /* Điều chỉnh kích thước chữ */
+    font-weight: bold; /* Đặt chữ đậm */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2c3648;
+    border-radius: 8px;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #f1c40f;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.meta-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
 section {

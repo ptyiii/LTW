@@ -177,10 +177,10 @@
             </div>
         </div>
         <div class="tier">
+            <div class="style-tier tfour">
+                <h3>C</h3>
+            </div>
             <div class="champions">
-                <div class="style-tier tfour">
-                    <h3>C</h3>
-                </div>
                 <div class="characters c1">
                     <img src="../TFT Icon/champion_2.png" alt="">
                 </div>
@@ -218,12 +218,12 @@
                     <img src="../TFT Icon/champion_34.png" alt="">
                 </div>
             </div>
-            </div> 
-            <div class="tier">
+        </div>
+            <div class="tier" style="margin-bottom: 40px;">
+                <div class="style-tier tfive">
+                    <h3>D</h3>
+                </div> 
                 <div class="champions">
-                    <div class="style-tier tfive">
-                        <h3>D</h3>
-                    </div>
                     <div class="characters c2">
                         <img src="../TFT Icon/champion_12.png" alt="">
                     </div>
@@ -261,7 +261,7 @@ html, body {
     background-color: #0E1E2A;
 }
 
-.main-container, Header { 
+.main-container { 
     width: 100%;
     max-width: 1200px; /* Đặt chiều rộng tối đa cho container */ 
     margin: 0 auto; /* Căn giữa container */ 
@@ -279,12 +279,6 @@ nav {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-}
-
-Header {
-    background-color: #0E1E2A;
-    margin: 0;
-    padding: 0;
 }
 
 .menu {  
@@ -305,7 +299,7 @@ Header {
 .menu a {
     color: #FFFFFF; /* Menu item color */
     text-decoration: none;
-    font-size: 23px;
+    font-size: 18px;
     padding: 3px;
     transition: color 0.3s;
 }
@@ -314,31 +308,47 @@ Header {
     color: #2ECC71; /* Color change on hover */
 }
 
-.Header { 
-    display: flex; 
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    font-family: sofia-pro, sans-serif; 
-    font-size: 42px; 
-    font-weight: 750; 
-    column-gap: 10px; 
-    text-decoration: none; 
-    color: #f5f6fa; 
-    margin-left: 250px;
+.header a {
+    display: flex;
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    color: #FFFFFF; /* Đặt màu chữ */
 }
 
-.Header img {
-    width: 50px;
-    height: auto;
-    image-rendering: auto;
+.header img {
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+a#container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    gap: 10px;
+}
+
+a#container img {
+    max-width: 50px; /* Điều chỉnh kích thước hình ảnh */
+    margin-bottom: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f5f6fa;
     background-color: #0E1E2A;
 }
 
+#container img {
+    max-width: 100px; /* Điều chỉnh kích thước hình ảnh */
+    margin-bottom: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
 #meta {
-    font-size: 43px;
-    font-weight: 750;
-    color: #f5f6fa;
+    font-size: 29px; /* Điều chỉnh kích thước chữ */
+    font-weight: bold; /* Đặt chữ đậm */
 }
 
 .tier {
